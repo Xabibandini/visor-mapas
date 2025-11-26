@@ -251,7 +251,7 @@
 
     L.control.layers(baseMaps).addTo(map);
 
-    const wfsUrl = "https://idena.navarra.es/ogc/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=IDENA:REFERE_Lin_Navarra&outputFormat=application/json&srsName=EPSG:4326" + Date.now();
+    const wfsUrl = "https://idena.navarra.es/ogc/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=IDENA:REFERE_Lin_Navarra&outputFormat=application/json&srsName=EPSG:4326&nocache=" + Date.now();
 
     const refereLayer = new L.GeoJSON.AJAX(wfsUrl, {
       onEachFeature: function (feature, layer) {
@@ -491,5 +491,6 @@
 </body>
 
 </html>
+
 
 
