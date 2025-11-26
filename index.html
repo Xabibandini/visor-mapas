@@ -202,7 +202,9 @@
       format: "image/jpeg",
       transparent: false,
       attribution: "© Gobierno de Navarra - IDENA",
-      version: "1.3.0"
+      version: "1.3.0",
+      detectRetina: false,
+      crossOrigin: 'anonymous' 
     });
 
     const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -487,4 +489,5 @@
 
 
 </body>
+
 </html>
